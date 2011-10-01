@@ -9,14 +9,14 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 body { margin: 0; font-size: 13px; line-height: 1.231; }
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body, button, input, select, textarea { font-family: sans-serif; color: #444; }
 
 ::-moz-selection { background: #FE4902; color: #fff; text-shadow: none; }
 ::selection { background: #FE4902; color: #fff; text-shadow: none; }
 
-a { color: #00e; text-decoration: none; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a { color: #000; text-decoration: underline; }
+a:visited { color: #000; }
+a:hover { text-decoration: none; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 
@@ -106,6 +106,7 @@ p {
 #sidebar h1 a {
 	color: #fff;
 	display: block;
+	text-decoration: none;
 }
 #sidebar h1 a:hover {
 	color: #333;
@@ -117,6 +118,7 @@ p {
 }
 #sidebar nav a {
 	color: #ddd;
+	text-decoration: none;
 }
 #sidebar nav a:hover {
 	color: #000;
@@ -127,12 +129,8 @@ p {
 
 #main {
 	width: 650px;
-	padding: 65px 0 10px 0;
+	padding: 70px 0 10px 0;
 	float: right;
-}
-
-.intro {
-	margin: 10px 0 20px 0;
 }
 
 #contact .row label {

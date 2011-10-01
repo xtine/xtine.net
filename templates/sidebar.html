@@ -5,8 +5,8 @@
             <nav>
                 <ul>
                     <li>{% if not entry and not entries %}<a href="/blog">{% endif %}blog{% if not entry and not entries %}</a>{% endif %}</li>
-                    <li><a href="">about</a></li>
-                    <li><a href="">contact</a></li>
+                    <li>{% if not flatpage.title == "about" %}<a href="/about">{% endif %}about{% if not flatpage.title == "about" %}</a>{% endif %}</li>
+                    <li>{% if not form %}<a href="/contact">{% endif %}contact{% if not form %}</a>{% endif %}</li>
                 </ul>
             </nav>
         </div>
