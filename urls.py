@@ -1,0 +1,25 @@
+from django.conf.urls.defaults import patterns, include, url
+from django.views.generic.simple import direct_to_template
+from django.conf import settings
+
+from django.contrib import admin
+admin.autodiscover()
+
+urlpatterns = patterns('',
+    (r'^blog/$', 'blog.views.index'),
+    (r'^$', direct_to_template, {'template': 'index.html'}),
+
+    (r'^contact/', include('contact_form.urls')),
+    (r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    (r'^admin/', include(admin.site.urls)),
+    (r'^grappelli/', include('grappelli.urls')),
+)
+
+if settings.LOCAL_MEDIA:
+    urlpatterns += patterns('',
+        url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {
+            'document_root' : settings.STATIC_ROOT + "/",
+            'show_indexes' : True
+        }),
+    )
+

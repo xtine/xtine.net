@@ -1,0 +1,7 @@
+__init__.py
+manage.py
+*.pyc
+*.db
+settings.py
+static/grappelli/
+static/admin

@@ -1,0 +1,12 @@
+        <div id="sidebar">
+            <header>
+                <h1><a href="/">xtine.net</a></h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>{% if not entry and not entries %}<a href="/blog">{% endif %}blog{% if not entry and not entries %}</a>{% endif %}</li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </nav>
+        </div>
