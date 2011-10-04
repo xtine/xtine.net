@@ -9,7 +9,7 @@
                 <h2>{{ entry.title }}</h2>
                 <div class="date">{{ entry.published|date:"b d Y" }}</div>
                 <div class="body">
-                    {{ entry.body }}
+                    {{ entry.body|safe }}
                 </div>
             </div>
     {% endfor %}
