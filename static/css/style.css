@@ -133,6 +133,24 @@ p {
 	float: right;
 }
 
+.entry {
+	width: 500px;
+	margin: 0 0 25px 0;
+}
+.entry h2 {
+	padding: 0 10px 0 0;
+	float: left;
+}
+.entry .date {
+	color: #ccc;
+	font-size: 1.35em;
+	padding: 5px 0 0 0;
+	float: right;
+}
+.entry .body {
+	clear: both;
+}
+
 #contact .row label {
 	width: 70px;
 	float: left;

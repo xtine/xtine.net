@@ -8,7 +8,7 @@ class Entry(models.Model):
     published = models.DateTimeField(default=datetime.datetime.now)
     updated = models.DateTimeField(default=datetime.datetime.now)
     slug = models.CharField(max_length=100)
-    tags = TaggableManager()
+    tags = TaggableManager(blank=True)
     
     class Meta:
         ordering = ['-updated']

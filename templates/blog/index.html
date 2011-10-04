@@ -5,8 +5,13 @@
 {% block content %}
     {% if entries %}
     {% for entry in entries %}
-        <h2>{{ entry.title }}</h2>
-        <p>{{ entry.body }}</p>
+            <div class="entry">
+                <h2>{{ entry.title }}</h2>
+                <div class="date">{{ entry.published|date:"b d Y" }}</div>
+                <div class="body">
+                    {{ entry.body }}
+                </div>
+            </div>
     {% endfor %}
     {% endif %}
 {% endblock %}
