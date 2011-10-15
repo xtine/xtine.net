@@ -81,6 +81,10 @@ p {
 	padding: 0 0 10px 0;
 }
 
+ul, ol {
+	margin: 0 0 5px 0;
+}
+
 #container {
 	width: 900px;
 	margin: auto;
