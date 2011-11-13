@@ -142,7 +142,8 @@ ul, ol {
 	margin: 0 0 25px 0;
 }
 .entry h2 {
-	padding: 0 10px 0 0;
+	width: 390px;
+	padding: 0 0 5px 0;
 	float: left;
 }
 .entry .date {
