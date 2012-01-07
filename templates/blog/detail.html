@@ -1,17 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %}blog{% endblock %}
+{% block title %}{{ entry.title }}{% endblock %}
 
 {% block content %}
-    {% if entries %}
-    {% for entry in entries %}
+
             <div class="entry">
-                <h2><a href="/blog/{{ entry.published|date:"Y/m/d" }}/{{entry.slug}}">{{ entry.title }}</a></h2>
+                <h2>{{ entry.title }}</h2>
                 <div class="date">{{ entry.published|date:"b d Y" }}</div>
                 <div class="body">
                     {{ entry.body|safe }}
                 </div>
             </div>
-    {% endfor %}
-    {% endif %}
+
 {% endblock %}

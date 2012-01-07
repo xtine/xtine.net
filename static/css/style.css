@@ -146,6 +146,12 @@ ul, ol {
 	padding: 0 0 5px 0;
 	float: left;
 }
+.entry h2 a {
+    text-decoration: none;
+}
+.entry h2 a:hover {
+    text-decoration: underline;
+}
 .entry .date {
 	color: #ccc;
 	font-size: 1.35em;
@@ -154,6 +160,10 @@ ul, ol {
 }
 .entry .body {
 	clear: both;
+}
+
+#contact p {
+    clear: both;
 }
 
 #contact .row label {
