@@ -1,0 +1,15 @@
+{% extends "admin/base.html" %}
+{% load adminmedia i18n grp_tags %}
+
+{% block title %}{{ title }} | {% trans 'Django site admin' %}{% endblock %}
+
+{% block javascripts %}{{ block.super }}
+	<script type="text/javascript" src="{% admin_media_prefix %}tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+	<script type="text/javascript" src="{% admin_media_prefix %}tinymce_setup/tinymce_setup.js"></script>
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name">{% trans 'Django administration' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
