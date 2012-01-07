@@ -1,7 +1,7 @@
 {% extends "admin/base.html" %}
-{% load adminmedia i18n grp_tags %}
+{% load adminmedia i18n %}
 
-{% block title %}{{ title }} | {% trans 'Django site admin' %}{% endblock %}
+{% block title %}{{ title }} | {% trans 'xtine site admin' %}{% endblock %}
 
 {% block javascripts %}{{ block.super }}
 	<script type="text/javascript" src="{% admin_media_prefix %}tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block branding %}
-    <h1 id="site-name">{% trans 'Django administration' %}</h1>
+    <h1 id="site-name">{% trans 'xtine.net administration' %}</h1>
 {% endblock %}
 
 {% block nav-global %}{% endblock %}
