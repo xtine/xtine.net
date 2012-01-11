@@ -5,7 +5,7 @@ from taggit.managers import TaggableManager
 class Entry(models.Model):
     title = models.CharField(max_length=300)
     body = models.TextField()
-    published = models.DateTimeField(default=datetime.datetime.now)
+    published = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(default=datetime.datetime.now)
     slug = models.CharField(max_length=100)
     tags = TaggableManager(blank=True)
