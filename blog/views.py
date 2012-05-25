@@ -33,9 +33,11 @@ def year(request, year):
 
 
 def detail(request, year, month, day, slug):
+    archives = Entry.objects.filter(hide=False).dates('published', 'month', order='DESC')
+
     entry = get_object_or_404(Entry,
         published__year=year,
         published__month=month,
         published__day=day,
         slug=slug)
-    return render_to_response('blog/detail.html', {'entry': entry})
+    return render_to_response('blog/detail.html', {'entry': entry, 'archives': archives})

@@ -3,6 +3,15 @@
 {% block title %}{{ entry.title }}{% endblock %}
 
 {% block content %}
+		    <div class="archives">
+		        <h3>archives</h3>
+		        <ul>
+		        {% for archive in archives %}
+		            <li><a href="/blog/{{ archive|date:"Y" }}/{{ archive|date:"m" }}/">{{ archive|date:"b" }} {{ archive|date:"Y" }}</a></li>
+		        {% endfor %}
+		        </ul>
+		    </div>
+
             <div class="entry">
                 <h2>{{ entry.title }}</h2>
                 <div class="date">{{ entry.published|date:"b d Y" }}</div>

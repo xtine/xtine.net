@@ -3,15 +3,14 @@
 {% block title %}blog{% endblock %}
 
 {% block content %}
-
-    <div class="archives">
-        <h3>archives</h3>
-        <ul>
-        {% for archive in archives %}
-            <li><a href="/blog/{{ archive|date:"Y" }}/{{ archive|date:"m" }}/">{{ archive|date:"b" }} {{ archive|date:"Y" }}</a></li>
-        {% endfor %}
-        </ul>
-    </div>
+            <div class="archives">
+                <h3>archives</h3>
+                <ul>
+                {% for archive in archives %}
+                    <li><a href="/blog/{{ archive|date:"Y" }}/{{ archive|date:"m" }}/">{{ archive|date:"b" }} {{ archive|date:"Y" }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
 
     {% if entries %}
     {% for entry in entries %}
