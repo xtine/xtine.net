@@ -4,3 +4,4 @@ manage.py
 settings.py
 static/grappelli/
 static/admin
+migrations/
