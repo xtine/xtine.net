@@ -24,4 +24,3 @@ if settings.LOCAL_MEDIA:
             'show_indexes': True
         }),
     )
-
