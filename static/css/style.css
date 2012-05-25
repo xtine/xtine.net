@@ -88,11 +88,11 @@ ul, ol {
 #container {
 	width: 900px;
 	margin: auto;
+	padding: 0 0 50px 0;
 }
 
 #sidebar {
 	width: 200px;
-	float: left;
 	position: fixed;
 	text-align: right;
 }
@@ -127,6 +127,9 @@ ul, ol {
 #sidebar nav a:hover {
 	color: #000;
 }
+#sidebar nav .current a {
+	color: #000;
+}
 #sidebar nav ul li {
 	padding: 0 0 3px 0;
 }
@@ -134,6 +137,7 @@ ul, ol {
 #main {
 	width: 650px;
 	padding: 70px 0 10px 0;
+	position: relative;
 	float: right;
 }
 
@@ -160,6 +164,31 @@ ul, ol {
 }
 .entry .body {
 	clear: both;
+}
+
+.archives {
+	width: 70px;
+	font-family: “Courier New”, Courier, monospace;
+	border: 1px dotted #ccc;
+	padding: 10px;
+	margin: 0 0 0 550px;
+	text-align: right;
+	position: fixed;
+}
+.archives h3 {
+	font-size: 15px;
+	padding: 0 0 5px 0;
+}
+.archives li {
+	width: 70px;
+	float: right;
+	list-style: none;
+}
+.archives li a {
+	text-decoration: none;
+}
+.archives li a:hover {
+	text-decoration: underline;
 }
 
 #contact p {

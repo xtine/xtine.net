@@ -3,9 +3,18 @@
 {% block title %}blog{% endblock %}
 
 {% block content %}
+
+    <div class="archives">
+        <h3>archives</h3>
+        <ul>
+        {% for archive in archives %}
+            <li><a href="/blog/{{ archive|date:"Y" }}/{{ archive|date:"m" }}/">{{ archive|date:"b" }} {{ archive|date:"Y" }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+
     {% if entries %}
     {% for entry in entries %}
-        {% if not entry.hide %}
             <div class="entry">
                 <h2><a href="/blog/{{ entry.published|date:"Y/m/d" }}/{{entry.slug}}">{{ entry.title }}</a></h2>
                 <div class="date">{{ entry.published|date:"b d Y" }}</div>
@@ -13,7 +22,6 @@
                     {{ entry.body|safe }}
                 </div>
             </div>
-        {% endif %}
     {% endfor %}
     {% endif %}
 {% endblock %}

@@ -8,6 +8,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
     (r'^blog/$', 'blog.views.index'),
     (r'^blog/(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/(?P<slug>[-\w]+)/$', 'blog.views.detail'),
+    (r'^blog/(?P<year>\d{4})/(?P<month>\d{2})/$', 'blog.views.month'),
+    (r'^blog/(?P<year>\d{4})/$', 'blog.views.year'),
 
     (r'^$', direct_to_template, {'template': 'index.html'}),
 

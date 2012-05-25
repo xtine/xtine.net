@@ -1,8 +1,16 @@
 # Source Code for xtine.net #
 
-Django project powering my personal website. Simple blogging engine, and contact form plugin. Will add more features as I continue to develop it.
+Simple website and blogging engine powered by Django and a few helper packages.
 
-##TODO:##
+### Installed Apps ###
+* Django 1.4
+* contact_form
+* taggit
+* Grappelli
+* South
+
+### TODO: ###
 * RSS
-* Archived sort (by year/month)
+* Setup Compass Framework (SASS)
+* Adaptive Layout
 * Admin Image Uploading
