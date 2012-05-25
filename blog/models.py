@@ -6,7 +6,7 @@ class Entry(models.Model):
     title = models.CharField(max_length=300)
     body = models.TextField()
     published = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(default=datetime.datetime.now)
+    updated = models.DateTimeField(auto_now_add=True, auto_now=True)
     slug = models.CharField(max_length=100)
     tags = TaggableManager(blank=True)
     hide = models.BooleanField()
@@ -17,9 +17,3 @@ class Entry(models.Model):
 
     def __unicode__(self):
         return self.title
-
-    def save(self):
-        if not self.id:
-            self.published = datetime.date.today()
-        self.updated = datetime.datetime.today()
-        super(Entry, self).save()
