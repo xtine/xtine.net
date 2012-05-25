@@ -5,6 +5,7 @@
 {% block content %}
     {% if entries %}
     {% for entry in entries %}
+        {% if not entry.hide %}
             <div class="entry">
                 <h2><a href="/blog/{{ entry.published|date:"Y/m/d" }}/{{entry.slug}}">{{ entry.title }}</a></h2>
                 <div class="date">{{ entry.published|date:"b d Y" }}</div>
@@ -12,6 +13,7 @@
                     {{ entry.body|safe }}
                 </div>
             </div>
+        {% endif %}
     {% endfor %}
     {% endif %}
 {% endblock %}

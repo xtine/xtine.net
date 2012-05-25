@@ -3,7 +3,6 @@
 {% block title %}{{ entry.title }}{% endblock %}
 
 {% block content %}
-
             <div class="entry">
                 <h2>{{ entry.title }}</h2>
                 <div class="date">{{ entry.published|date:"b d Y" }}</div>
@@ -11,5 +10,4 @@
                     {{ entry.body|safe }}
                 </div>
             </div>
-
 {% endblock %}
