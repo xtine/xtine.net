@@ -1,6 +1,6 @@
 from django.db import models
-import datetime
 from taggit.managers import TaggableManager
+
 
 class Entry(models.Model):
     title = models.CharField(max_length=300)
