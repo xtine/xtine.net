@@ -190,6 +190,11 @@ ul, ol {
 .archives li a:hover {
 	text-decoration: underline;
 }
+.feed {
+	padding: 20px 0 0 0;
+	display: block;
+	clear: both;
+}
 
 #contact p {
     clear: both;

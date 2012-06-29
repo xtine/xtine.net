@@ -10,6 +10,11 @@
                     <li><a href="/blog/{{ archive|date:"Y" }}/{{ archive|date:"m" }}/">{{ archive|date:"b" }} {{ archive|date:"Y" }}</a></li>
                 {% endfor %}
                 </ul>
+
+                <span class="feed">
+                    <a href="/blog/feed">RSS Feed</a>
+                </span>
+
             </div>
 
     {% if entries %}
