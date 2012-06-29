@@ -1,3 +1,4 @@
+from django.contrib.syndication.views import Feed
 from django.http import Http404
 from django.shortcuts import get_object_or_404, render_to_response
 from django.template import RequestContext
@@ -41,3 +42,18 @@ def detail(request, year, month, day, slug):
         published__day=day,
         slug=slug)
     return render_to_response('blog/detail.html', {'entry': entry, 'archives': archives})
+
+
+class LatestEntriesFeed(Feed):
+    title = "xtine.net blog feed"
+    link = "/blog/feed/"
+    description = "xtine.net blog entries"
+
+    def items(self):
+        return Entry.objects.filter(hide=False).order_by('-published')[:5]
+
+    def item_title(self, item):
+        return item.title
+
+    def item_description(self, item):
+        return item.body

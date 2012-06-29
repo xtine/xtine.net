@@ -1,6 +1,7 @@
+from django.conf import settings
 from django.conf.urls.defaults import patterns, include, url
 from django.views.generic.simple import direct_to_template
-from django.conf import settings
+from blog.views import LatestEntriesFeed
 
 from django.contrib import admin
 admin.autodiscover()
@@ -10,6 +11,7 @@ urlpatterns = patterns('',
     (r'^blog/(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/(?P<slug>[-\w]+)/$', 'blog.views.detail'),
     (r'^blog/(?P<year>\d{4})/(?P<month>\d{2})/$', 'blog.views.month'),
     (r'^blog/(?P<year>\d{4})/$', 'blog.views.year'),
+    (r'^blog/feed/$', LatestEntriesFeed()),
 
     (r'^$', direct_to_template, {'template': 'index.html'}),
 
