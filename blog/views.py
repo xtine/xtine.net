@@ -45,7 +45,7 @@ def detail(request, year, month, day, slug):
 
 
 class LatestEntriesFeed(Feed):
-    title = "xtine.net blog feed"
+    title = "xtine.net blog"
     link = "/blog/feed/"
     description = "xtine.net blog entries"
 
