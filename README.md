@@ -10,7 +10,6 @@ Simple website and blogging engine powered by Django and a few helper packages.
 * South
 
 ### TODO: ###
-* RSS
 * Setup Compass Framework (SASS)
 * Adaptive Layout
 * Class Based Views
