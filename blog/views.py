@@ -14,7 +14,7 @@ def index(request):
 
 
 def month(request, year, month):
-    entries = Entry.objects.filter(hide=False, published__year=year, published__month=month)
+    entries = Entry.objects.filter(hide=False, published__year=year, published__month=month).order_by('-published')
     archives = Entry.objects.filter(hide=False).dates('published', 'month', order='DESC')
 
     if not entries:
@@ -24,7 +24,7 @@ def month(request, year, month):
 
 
 def year(request, year):
-    entries = Entry.objects.filter(hide=False, published__year=year)
+    entries = Entry.objects.filter(hide=False, published__year=year).order_by('-published')
     archives = Entry.objects.filter(hide=False).dates('published', 'month', order='DESC')
 
     if not entries:
