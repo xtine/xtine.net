@@ -1,0 +1,7 @@
+Django
+South
+django-contact-form
+django-grappelli
+django-taggit
+gunicorn
+wsgiref
