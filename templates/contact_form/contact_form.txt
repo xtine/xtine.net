@@ -1,4 +1,7 @@
 
-Name: {{name}} <{{email}}>
+Name: {{ name }} <{{ email }}>
 
-Message: {{body}}
+Message:
+{% autoescape off %}
+    {{ body }}
+{% endautoescape %}
