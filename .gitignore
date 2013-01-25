@@ -1,4 +1,3 @@
-manage.py
 *.pyc
 *.db
 settings.py
