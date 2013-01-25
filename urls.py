@@ -15,6 +15,8 @@ urlpatterns = patterns('',
 
     (r'^$', direct_to_template, {'template': 'index.html'}),
 
+    (r'^portfolio/$', direct_to_template, {'template': 'portfolio/index.html'}),
+
     (r'^contact/', include('contact_form.urls')),
     (r'^admin/doc/', include('django.contrib.admindocs.urls')),
     (r'^admin/', include(admin.site.urls)),
