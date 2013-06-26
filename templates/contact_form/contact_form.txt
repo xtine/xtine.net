@@ -1,7 +1,0 @@
-
-Name: {{ name }} <{{ email }}>
-
-Message:
-{% autoescape off %}
-    {{ body }}
-{% endautoescape %}
