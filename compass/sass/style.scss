@@ -1,0 +1,55 @@
+@import "modules/normalize";
+@import "modules/base";
+
+body {
+    @include typeface;
+    font-size: 17px;
+    color: #404040;
+}
+
+#container {
+    width: 850px;
+    margin: 0 auto;
+    padding: 35px;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+
+    h1 {
+        width: 250px;
+        color: #FE4902;
+        font-size: 65px;
+        line-height: 65px;
+        letter-spacing: -2px;
+        margin: 0;
+        float: left;
+    }
+
+    nav {
+        padding: 32px 0 0 0;
+        float: right;
+
+        li {
+            padding-left: 25px;
+            color: #707070;
+            font-size: 25px;
+            text-align: right;
+            display: inline-block;
+        }
+    }
+
+    #main {
+        padding: 55px 0;
+        clear: both;
+
+        .post {
+            h2 {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            p {
+                line-height: 25px;
+            }
+        }
+    }
+
+}
