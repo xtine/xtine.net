@@ -10,6 +10,17 @@ body, html {
     height: 100%;
 }
 
+a {
+    @include transition-property(color);
+    @include transition-duration(300ms);
+    @include transition-timing-function(ease-in);
+
+    &:hover {
+        color: #707070;
+        text-decoration: none;
+    }
+}
+
 #container {
     max-width: 850px;
     height: 90%;
@@ -27,9 +38,7 @@ body, html {
         margin: 0;
         float: left;
 
-        a:hover {
-            text-decoration: none;
-        }
+
     }
     h2 {
         margin: 0;

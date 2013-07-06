@@ -309,6 +309,25 @@ body, html {
   height: 100%;
 }
 
+a {
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+a:hover {
+  color: #707070;
+  text-decoration: none;
+}
+
 #container {
   max-width: 850px;
   height: 90%;
@@ -325,9 +344,6 @@ body, html {
   letter-spacing: -2px;
   margin: 0;
   float: left;
-}
-#container h1 a:hover {
-  text-decoration: none;
 }
 #container h2 {
   margin: 0;
