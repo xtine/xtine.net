@@ -401,6 +401,10 @@ header h1 {
   cursor: default;
   float: left;
 }
+header h1.active a {
+  color: #FE4902;
+  cursor: default;
+}
 header nav {
   padding: 32px 0 0 0;
   float: right;

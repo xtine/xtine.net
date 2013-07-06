@@ -83,6 +83,11 @@ header {
         margin: 0;
         cursor: default;
         float: left;
+
+        &.active a {
+            color: #FE4902;
+            cursor: default;
+        }
     }
 
     nav {
