@@ -38,13 +38,13 @@ body, button, input, select, textarea {
 }
 
 ::-moz-selection {
-  background: #fe57a1;
+  background: #FE4902;
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fe57a1;
+  background: #FE4902;
   color: #fff;
   text-shadow: none;
 }
@@ -328,73 +328,15 @@ a:hover {
   text-decoration: none;
 }
 
-#container {
-  max-width: 850px;
-  height: 90%;
-  margin: 0 auto;
-  padding: 35px;
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-#container h1 {
-  width: 250px;
-  color: #FE4902;
-  font-size: 65px;
-  line-height: 65px;
-  letter-spacing: -2px;
-  margin: 0;
-  float: left;
-}
-#container h2 {
+h2 {
   margin: 0;
   padding: 0 0 15px 0;
   text-transform: lowercase;
 }
-#container p {
-  line-height: 25px;
+
+p {
+  line-height: 27px;
   margin: 0 0 10px 0;
-}
-#container nav {
-  padding: 32px 0 0 0;
-  float: right;
-}
-#container nav li {
-  margin: 0 0 0 25px;
-  color: #707070;
-  font-size: 25px;
-  text-align: right;
-  display: inline-block;
-}
-#container nav li a {
-  color: #909090;
-  -webkit-transition-property: color;
-  -moz-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 300ms;
-  -moz-transition-duration: 300ms;
-  -o-transition-duration: 300ms;
-  transition-duration: 300ms;
-  -webkit-transition-timing-function: ease-in;
-  -moz-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-}
-#container nav li a:hover {
-  color: #000;
-  text-decoration: none;
-}
-#container nav li.active a {
-  color: #000;
-  cursor: default;
-}
-#container #main {
-  padding: 55px 0;
-  clear: both;
-  animation: fadein 1s;
-  -moz-animation: fadein 1s;
-  -webkit-animation: fadein 1s;
-  -o-animation: fadein 1s;
 }
 
 @keyframes fadein {
@@ -438,4 +380,114 @@ a:hover {
   to {
     opacity: 1;
   }
+}
+
+#container {
+  max-width: 850px;
+  min-height: 90%;
+  margin: 0 auto;
+  padding: 35px 45px;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+header h1 {
+  width: 250px;
+  color: #FE4902;
+  font-size: 65px;
+  line-height: 65px;
+  letter-spacing: -2px;
+  margin: 0;
+  cursor: default;
+  float: left;
+}
+header nav {
+  padding: 32px 0 0 0;
+  float: right;
+}
+header nav li {
+  margin: 0 0 0 25px;
+  color: #707070;
+  font-size: 25px;
+  text-align: right;
+  display: inline-block;
+}
+header nav li a {
+  color: #909090;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+header nav li a:hover {
+  color: #000;
+  text-decoration: none;
+}
+header nav li.active a {
+  color: #000;
+  cursor: default;
+}
+
+#main {
+  padding: 55px 0;
+  clear: both;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+  -o-animation: fadein 1s;
+}
+
+.post {
+  padding: 0 0 55px 0;
+}
+
+footer {
+  font-size: 14px;
+  color: #707070;
+  text-align: right;
+  padding: 135px 0 0 0;
+}
+
+.projects {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.projects li {
+  margin: 35px 0;
+  list-style: none;
+}
+.projects li h3 {
+  margin-bottom: 5px;
+}
+.projects li .screenshot {
+  width: 260px;
+  text-align: center;
+  margin: 15px 25px 15px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+.projects li .screenshot p {
+  font-size: 13px;
+  line-height: 17px;
+  font-style: italic;
+  color: #808080;
+  padding: 10px 0 0 0;
+}
+.projects li .screenshot:last-child {
+  margin-right: 0;
+}
+.projects li img {
+  width: 260px;
+  height: 199px;
+  -webkit-box-shadow: gray 3px 3px 10px;
+  -moz-box-shadow: gray 3px 3px 10px;
+  box-shadow: gray 3px 3px 10px;
 }

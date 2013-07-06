@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>xtine.net - {% block title %}christine cheung{% endblock title %}</title>
+    <title>xtine.net - {% block title %}by christine cheung{% endblock title %}</title>
 
     <meta name="description" content="xtine.net - christine cheung">
     <meta name="viewport" content="width=device-width">
@@ -19,20 +19,29 @@
 
     <div id="container">
 
-        <h1><a href="/">xtine.net</a></h1>
+        <header>
 
-        <nav>
-            <ul>
-                <li{% if url == "about" %} class="active"{% endif %}><a href="/about">about</a></li>
-                <li{% if url == "projects" %} class="active"{% endif %}><a href="/projects">projects</a></li>
-                {# <li{% if url == "contact" %}class="active"{% endif %}><a href="/contact">contact</a></li> #}
-            </ul>
-        </nav>
+            <h1>xtine.net</h1>
+{#
+            <nav>
+                <ul>
+                    <li{% if url == "projects" %} class="active"{% endif %}><a href="/projects">projects</a></li>
+                </ul>
+            </nav>
+ #}
+        </header>
 
         <div id="main" role="main">
+
             {% block content %}{% endblock content %}
 
         </div>
+
+        <footer>
+
+            Copyright © 2008–2013 <strong>Christine Cheung</strong>
+
+        </footer>
 
     </div>
 
