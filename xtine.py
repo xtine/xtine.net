@@ -11,23 +11,23 @@ def index():
     return render_template('index.html', url='index')
 
 
-@app.route('/about')
+@app.route('/about/')
 def about():
     return render_template('about.html', url='about')
 
 
-@app.route('/blog')
+@app.route('/blog/')
 def blog():
     return render_template('blog.html', url='blog')
 
 
-@app.route('/projects')
-@app.route('/portfolio')
+@app.route('/projects/')
+@app.route('/portfolio/')
 def projects():
     return render_template('projects.html', url='projects')
 
 
-@app.route('/contact')
+@app.route('/contact/')
 def contact():
     return render_template('contact.html', url='contact')
 
