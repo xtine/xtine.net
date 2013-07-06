@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, send_from_directory
 
 # let there be Flask
 app = Flask(__name__)
@@ -35,6 +35,12 @@ def contact():
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
+
+
+@app.route("/favicon.ico")
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
+    # return send_static_file('favicon.ico')
 
 
 # run ze app!
