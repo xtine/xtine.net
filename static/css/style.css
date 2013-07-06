@@ -325,18 +325,21 @@ body, html {
   letter-spacing: -2px;
   margin: 0;
   float: left;
-  animation: fadein 1s;
-  -moz-animation: fadein 1s;
-  -webkit-animation: fadein 1s;
-  -o-animation: fadein 1s;
+}
+#container h1 a:hover {
+  text-decoration: none;
+}
+#container h2 {
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+#container p {
+  line-height: 25px;
+  margin: 0 0 10px 0;
 }
 #container nav {
   padding: 32px 0 0 0;
   float: right;
-  animation: fadein 1s;
-  -moz-animation: fadein 1s;
-  -webkit-animation: fadein 1s;
-  -o-animation: fadein 1s;
 }
 #container nav li {
   margin: 0 0 0 25px;
@@ -362,22 +365,19 @@ body, html {
 }
 #container nav li a:hover {
   color: #000;
+  text-decoration: none;
+}
+#container nav li.active a {
+  color: #000;
+  cursor: default;
 }
 #container #main {
   padding: 55px 0;
   clear: both;
-  animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -webkit-animation: fadein 2s;
-  -o-animation: fadein 2s;
-}
-#container #main .post h2 {
-  margin: 0;
-  padding: 0 0 15px 0;
-}
-#container #main .post p {
-  line-height: 25px;
-  margin: 0 0 10px 0;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+  -o-animation: fadein 1s;
 }
 
 @keyframes fadein {

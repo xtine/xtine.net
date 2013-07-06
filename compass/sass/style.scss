@@ -27,21 +27,22 @@ body, html {
         margin: 0;
         float: left;
 
-        animation: fadein 1s;
-        -moz-animation: fadein 1s;
-        -webkit-animation: fadein 1s;
-        -o-animation: fadein 1s;
-
+        a:hover {
+            text-decoration: none;
+        }
+    }
+    h2 {
+        margin: 0;
+        padding: 0 0 15px 0;
+    }
+    p {
+        line-height: 25px;
+        margin: 0 0 10px 0;
     }
 
     nav {
         padding: 32px 0 0 0;
         float: right;
-
-        animation: fadein 1s;
-        -moz-animation: fadein 1s;
-        -webkit-animation: fadein 1s;
-        -o-animation: fadein 1s;
 
         li {
             margin: 0 0 0 25px;
@@ -58,7 +59,12 @@ body, html {
 
                 &:hover {
                     color: #000;
+                    text-decoration: none;
                 }
+            }
+            &.active a {
+                color: #000;
+                cursor: default;
             }
         }
     }
@@ -67,21 +73,10 @@ body, html {
         padding: 55px 0;
         clear: both;
 
-        animation: fadein 2s;
-        -moz-animation: fadein 2s;
-        -webkit-animation: fadein 2s;
-        -o-animation: fadein 2s;
-
-        .post {
-            h2 {
-                margin: 0;
-                padding: 0 0 15px 0;
-            }
-            p {
-                line-height: 25px;
-                margin: 0 0 10px 0;
-            }
-        }
+        animation: fadein 1s;
+        -moz-animation: fadein 1s;
+        -webkit-animation: fadein 1s;
+        -o-animation: fadein 1s;
     }
 }
 
