@@ -13,7 +13,7 @@
         .screenshot {
             width: 260px;
             text-align: center;
-            margin: 15px 25px 15px 0;
+            margin: 15px 20px 0 0;
             display: inline-block;
             vertical-align: top;
 
@@ -32,7 +32,6 @@
 
         img {
             width: 260px;
-            height: 199px;
 
             @include box-shadow(#808080 3px 3px 10px);
         }

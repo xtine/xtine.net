@@ -474,7 +474,7 @@ footer {
 .projects li .screenshot {
   width: 260px;
   text-align: center;
-  margin: 15px 25px 15px 0;
+  margin: 15px 20px 0 0;
   display: inline-block;
   vertical-align: top;
 }
@@ -490,7 +490,6 @@ footer {
 }
 .projects li img {
   width: 260px;
-  height: 199px;
   -webkit-box-shadow: gray 3px 3px 10px;
   -moz-box-shadow: gray 3px 3px 10px;
   box-shadow: gray 3px 3px 10px;
