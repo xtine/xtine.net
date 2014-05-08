@@ -391,13 +391,26 @@ p {
   border-left: 1px solid #eee;
 }
 
+header {
+  border-bottom: 1px solid #eee;
+}
+header {
+  *zoom: 1;
+}
+header:before, header:after {
+  content: "";
+  display: table;
+}
+header:after {
+  clear: both;
+}
 header h1 {
   width: 250px;
   color: #FE4902;
   font-size: 65px;
   line-height: 65px;
   letter-spacing: -2px;
-  margin: 0;
+  margin: 0 0 45px 0;
   cursor: default;
   float: left;
 }
@@ -441,12 +454,23 @@ header nav li.active a {
 }
 
 #main {
-  padding: 55px 0;
+  padding: 45px 0;
   clear: both;
   animation: fadein 1s;
   -moz-animation: fadein 1s;
   -webkit-animation: fadein 1s;
   -o-animation: fadein 1s;
+}
+#main h2 {
+  padding: 0;
+  font-size: 35px;
+}
+#main h3 {
+  padding: 10px 0;
+  color: #666;
+  margin: 0;
+  font-size: 25px;
+  font-weight: normal;
 }
 
 .post {

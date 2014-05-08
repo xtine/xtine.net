@@ -73,6 +73,8 @@ p {
 }
 
 header {
+    border-bottom: 1px solid #eee;
+    @include clearfix();
 
     h1 {
         width: 250px;
@@ -80,7 +82,7 @@ header {
         font-size: 65px;
         line-height: 65px;
         letter-spacing: -2px;
-        margin: 0;
+        margin: 0 0 45px 0;
         cursor: default;
         float: left;
 
@@ -121,13 +123,25 @@ header {
 }
 
 #main {
-    padding: 55px 0;
+    padding: 45px 0;
     clear: both;
 
     animation: fadein 1s;
     -moz-animation: fadein 1s;
     -webkit-animation: fadein 1s;
     -o-animation: fadein 1s;
+
+    h2 {
+        padding: 0;
+        font-size: 35px;
+    }
+    h3 {
+        padding: 10px 0;
+        color: #666;
+        margin: 0;
+        font-size: 25px;
+        font-weight: normal;
+    }
 }
 
 .post {
