@@ -73,6 +73,7 @@ p {
 }
 
 header {
+    padding: 0 0 35px 0;
     border-bottom: 1px solid #eee;
     @include clearfix();
 
@@ -82,9 +83,10 @@ header {
         font-size: 65px;
         line-height: 65px;
         letter-spacing: -2px;
-        margin: 0 0 45px 0;
+        margin: 0 0 10px 0;
         cursor: default;
-        float: left;
+        display: inline-block;
+
 
         &.active a {
             color: #FE4902;
@@ -93,11 +95,10 @@ header {
     }
 
     nav {
-        padding: 32px 0 0 0;
-        float: right;
+        padding: 0 0 0 45px;
+        display: inline-block;
 
         li {
-            margin: 0 0 0 25px;
             color: #707070;
             font-size: 25px;
             text-align: right;
@@ -118,12 +119,16 @@ header {
                 color: #000;
                 cursor: default;
             }
+            &:before {
+                content: "/ ";
+            }
         }
     }
 }
 
 #main {
     padding: 45px 0;
+    border-bottom: 1px solid #eee;
     clear: both;
 
     animation: fadein 1s;
@@ -132,7 +137,7 @@ header {
     -o-animation: fadein 1s;
 
     h2 {
-        padding: 0;
+        padding: 0 0 15px 0;
         font-size: 35px;
     }
     h3 {
