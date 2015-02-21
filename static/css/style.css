@@ -411,17 +411,12 @@ header h1 {
   font-size: 65px;
   line-height: 65px;
   letter-spacing: -2px;
-  margin: 0 0 10px 0;
+  margin: 0;
   cursor: default;
-  display: inline-block;
 }
 header h1.active a {
   color: #FE4902;
   cursor: default;
-}
-header nav {
-  padding: 0 0 0 45px;
-  display: inline-block;
 }
 header nav li {
   color: #707070;
@@ -452,9 +447,6 @@ header nav li.active a {
   color: #000;
   cursor: default;
 }
-header nav li:before {
-  content: "/ ";
-}
 
 #main {
   padding: 45px 0;
@@ -476,8 +468,10 @@ header nav li:before {
   font-size: 25px;
   font-weight: normal;
 }
-
-.post {
+#main section {
+  padding: 0 0 25px 0;
+}
+#main .post {
   padding: 0 0 55px 0;
 }
 
@@ -489,7 +483,7 @@ footer {
 }
 
 .projects li {
-  margin: 35px 0;
+  margin: 0 0 25px 0;
   list-style: none;
 }
 .projects li h3 {

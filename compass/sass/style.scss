@@ -2,162 +2,160 @@
 @import "modules/base";
 
 body {
-    @include typeface;
-    font-size: 17px;
-    color: #404040;
+  @include typeface;
+  font-size: 17px;
+  color: #404040;
 }
 body, html {
-    height: 100%;
+  height: 100%;
 }
 
 a {
-    @include transition-property(color);
-    @include transition-duration(300ms);
-    @include transition-timing-function(ease-in);
+  @include transition-property(color);
+  @include transition-duration(300ms);
+  @include transition-timing-function(ease-in);
 
-    &:hover {
-        color: #707070;
-        text-decoration: none;
-    }
+  &:hover {
+    color: #707070;
+    text-decoration: none;
+  }
 }
 h2 {
-    margin: 0;
-    padding: 0 0 15px 0;
-    text-transform: lowercase;
+  margin: 0;
+  padding: 0 0 15px 0;
+  text-transform: lowercase;
 }
 p {
-    line-height: 27px;
-    margin: 0 0 10px 0;
+  line-height: 27px;
+  margin: 0 0 10px 0;
 }
 
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
 }
 @-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
 }
 @-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
 }
 @-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
 #container {
-    max-width: 850px;
-    min-height: 90%;
-    margin: 0 auto;
-    padding: 35px 45px;
-    border-right: 1px solid #eee;
-    border-left: 1px solid #eee;
+  max-width: 850px;
+  min-height: 90%;
+  margin: 0 auto;
+  padding: 35px 45px;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
 }
 
 header {
-    padding: 0 0 35px 0;
-    border-bottom: 1px solid #eee;
-    @include clearfix();
+  padding: 0 0 35px 0;
+  border-bottom: 1px solid #eee;
+  @include clearfix();
 
-    h1 {
-        width: 250px;
-        color: #FE4902;
-        font-size: 65px;
-        line-height: 65px;
-        letter-spacing: -2px;
-        margin: 0 0 10px 0;
+  h1 {
+    width: 250px;
+    color: #FE4902;
+    font-size: 65px;
+    line-height: 65px;
+    letter-spacing: -2px;
+    margin: 0;
+    cursor: default;
+
+    &.active a {
+      color: #FE4902;
+      cursor: default;
+    }
+  }
+
+  nav {
+
+    li {
+      color: #707070;
+      font-size: 25px;
+      text-align: right;
+      display: inline-block;
+
+      a {
+        color: #909090;
+        @include transition-property(color);
+        @include transition-duration(300ms);
+        @include transition-timing-function(ease-in);
+
+        &:hover {
+          color: #000;
+          text-decoration: none;
+        }
+      }
+      &.active a {
+        color: #000;
         cursor: default;
-        display: inline-block;
-
-
-        &.active a {
-            color: #FE4902;
-            cursor: default;
-        }
+      }
     }
-
-    nav {
-        padding: 0 0 0 45px;
-        display: inline-block;
-
-        li {
-            color: #707070;
-            font-size: 25px;
-            text-align: right;
-            display: inline-block;
-
-            a {
-                color: #909090;
-                @include transition-property(color);
-                @include transition-duration(300ms);
-                @include transition-timing-function(ease-in);
-
-                &:hover {
-                    color: #000;
-                    text-decoration: none;
-                }
-            }
-            &.active a {
-                color: #000;
-                cursor: default;
-            }
-            &:before {
-                content: "/ ";
-            }
-        }
-    }
+  }
 }
 
 #main {
-    padding: 45px 0;
-    border-bottom: 1px solid #eee;
-    clear: both;
+  padding: 45px 0;
+  border-bottom: 1px solid #eee;
+  clear: both;
 
-    animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    -webkit-animation: fadein 1s;
-    -o-animation: fadein 1s;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+  -o-animation: fadein 1s;
 
-    h2 {
-        padding: 0 0 15px 0;
-        font-size: 35px;
-    }
-    h3 {
-        padding: 10px 0;
-        color: #666;
-        margin: 0;
-        font-size: 25px;
-        font-weight: normal;
-    }
-}
+  h2 {
+    padding: 0 0 15px 0;
+    font-size: 35px;
+  }
+  h3 {
+    padding: 10px 0;
+    color: #666;
+    margin: 0;
+    font-size: 25px;
+    font-weight: normal;
+  }
 
-.post {
+  section {
+    padding: 0 0 25px 0;
+  }
+
+  .post {
     padding: 0 0 55px 0;
+  }
 }
+
 
 footer {
-    font-size: 14px;
-    color: #707070;
-    text-align: right;
-    padding: 135px 0 0 0;
+  font-size: 14px;
+  color: #707070;
+  text-align: right;
+  padding: 135px 0 0 0;
 }
 
 @import "views/projects";
