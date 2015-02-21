@@ -1,15 +1,15 @@
-# oh hey, xtine is re-designing her website, again.
+# xtine.net
 
 ## Architecture
-* Python 2.7.3
-    * Flask 0.10.1
-
-### HTML/CSS Helpers
-* Compass 0.12.2
-* Modernizr 2.6.2
+* Back-End
+    * Flask (Python)
+* Front-End
+    * Compass (SCSS)
+    * Modernizr 2.6.2
 
 ### TODO:
-* Blog engine
 * Contact form
+* Flask-admin
+* Blog engine
 * SQLAlchemy
     * PostgreSQL
