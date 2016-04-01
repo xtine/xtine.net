@@ -9,9 +9,10 @@
   text-shadow: none; }
 
 body {
-  color: #404040;
+  color: #666666;
   font-family: "Helvetica", Arial, sans-serif;
   font-size: 19px;
+  letter-spacing: 0.3px;
   line-height: 1.25em; }
 
 body,
@@ -29,28 +30,10 @@ a {
     outline: 0; }
 
 p {
-  line-height: 27px;
+  line-height: 1.7em;
   margin: 0 0 10px; }
 
 @keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-@-moz-keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-@-o-keyframes fadein {
   from {
     opacity: 0; }
   to {
@@ -60,25 +43,34 @@ ul,
 ol {
   margin: 0;
   padding: 0; }
+  ul li,
+  ol li {
+    list-style: none;
+    padding: 7px 0; }
 
 #container {
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
   margin: 20px auto;
-  max-width: 850px;
+  max-width: 650px;
   min-height: 90%;
-  padding: 20px 40px; }
+  padding: 20px 40px;
+  position: relative; }
 
 header {
-  border-bottom: 1px solid #eee;
+  color: #404040;
   cursor: default;
-  padding: 0 0 40px; }
+  padding: 0 0 20px;
+  text-align: center; }
   header h1 {
+    border-bottom: 1px solid #eee;
     color: #fe4902;
+    display: inline-block;
     font-size: 65px;
     letter-spacing: -2px;
     line-height: 65px;
-    margin: 0; }
+    padding: 0 0 15px;
+    margin: 0 0 15px; }
   header h2 {
     font-size: 30px;
     letter-spacing: 1px;
@@ -87,22 +79,18 @@ header {
 
 #main {
   animation: fadein 1s;
-  -moz-animation: fadein 1s;
-  -webkit-animation: fadein 1s;
-  -o-animation: fadein 1s;
-  border-bottom: 1px solid #eee;
-  padding: 40px 0; }
-  #main ul {
-    margin: 0; }
-    #main ul li {
-      list-style: none;
-      padding: 7px 0; }
+  padding: 20px 0; }
+  #main p {
+    text-align: justify; }
 
 footer {
+  bottom: 20px;
   color: #ddd;
   font-size: 14px;
   letter-spacing: 2px;
   padding: 40px 0 0;
+  position: absolute;
+  right: 40px;
   text-align: right; }
 
 .projects li {
@@ -125,7 +113,5 @@ footer {
     .projects li .screenshot:last-child {
       margin-right: 0; }
   .projects li img {
-    -webkit-box-shadow: gray 3px 3px 10px;
-    -moz-box-shadow: gray 3px 3px 10px;
     box-shadow: gray 3px 3px 10px;
     width: 260px; }

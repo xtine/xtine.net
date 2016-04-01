@@ -2,7 +2,8 @@
 
 $orange: #fe4902;
 $white: #fff;
-$text-color: #404040;
+$header-text-color: #404040;
+$text-color: #666666;
 $line-color: #eee;
 $footer-color: #ddd;
 
@@ -11,7 +12,6 @@ $footer-color: #ddd;
   color: $white;
   text-shadow: none;
 }
-
 ::-moz-selection {
   background: $orange;
   color: $white;
@@ -22,6 +22,7 @@ body {
   color: $text-color;
   font-family: "Helvetica", Arial, sans-serif;
   font-size: 19px;
+  letter-spacing: 0.3px;
   line-height: 1.25em;
 }
 
@@ -49,7 +50,7 @@ a {
 }
 
 p {
-  line-height: 27px;
+  line-height: 1.7em;
   margin: 0 0 10px;
 }
 
@@ -63,63 +64,42 @@ p {
   }
 }
 
-@-moz-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 ul,
 ol {
   margin: 0;
   padding: 0;
-}
 
+  li {
+    list-style: none;
+    padding: 7px 0;
+  }
+}
 
 #container {
   border-left: 1px solid $line-color;
   border-right: 1px solid $line-color;
   margin: 20px auto;
-  max-width: 850px;
+  max-width: 650px;
   min-height: 90%;
   padding: 20px 40px;
+  position: relative;
 }
 
 header {
-  border-bottom: 1px solid $line-color;
+  color: $header-text-color;
   cursor: default;
-  padding: 0 0 40px;
+  padding: 0 0 20px;
+  text-align: center;
 
   h1 {
+    border-bottom: 1px solid $line-color;
     color: $orange;
+    display: inline-block;
     font-size: 65px;
     letter-spacing: -2px;
     line-height: 65px;
-    margin: 0;
+    padding: 0 0 15px;
+    margin: 0 0 15px;
   }
 
   h2 {
@@ -132,27 +112,21 @@ header {
 
 #main {
   animation: fadein 1s;
-  -moz-animation: fadein 1s;
-  -webkit-animation: fadein 1s;
-  -o-animation: fadein 1s;
-  border-bottom: 1px solid $line-color;
-  padding: 40px 0;
+  padding: 20px 0;
 
-  ul {
-    margin: 0;
-
-    li {
-      list-style: none;
-      padding: 7px 0;
-    }
+  p {
+    text-align: justify;
   }
 }
 
 footer {
+  bottom: 20px;
   color: $footer-color;
   font-size: 14px;
   letter-spacing: 2px;
   padding: 40px 0 0;
+  position: absolute;
+  right: 40px;
   text-align: right;
 }
 
@@ -185,8 +159,6 @@ footer {
   }
 
   img {
-    -webkit-box-shadow: gray 3px 3px 10px;
-    -moz-box-shadow: gray 3px 3px 10px;
     box-shadow: gray 3px 3px 10px;
     width: 260px;
   }
