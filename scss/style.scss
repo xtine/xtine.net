@@ -3,7 +3,7 @@
 $orange: #fe4902;
 $white: #fff;
 $header-text-color: #404040;
-$text-color: #666666;
+$text-color: #666;
 $line-color: #eee;
 $footer-color: #ddd;
 
@@ -22,7 +22,7 @@ body {
   color: $text-color;
   font-family: "Helvetica", Arial, sans-serif;
   font-size: 19px;
-  letter-spacing: 0.3px;
+  letter-spacing: .3px;
   line-height: 1.25em;
 }
 
@@ -119,6 +119,10 @@ header {
   }
 }
 
+section {
+  padding: 0 0 20px 0;
+}
+
 footer {
   bottom: 20px;
   color: $footer-color;
@@ -135,7 +139,7 @@ footer {
   margin: 0 0 25px;
 
   h3 {
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
   }
 
   .screenshot {
