@@ -4,7 +4,7 @@ body {
   font-size: 19px;
   letter-spacing: .3px;
   line-height: 1.25em;
-  padding: 0 20px;
+  margin: 0;
 }
 
 ::selection {
@@ -76,14 +76,13 @@ ol li {
   margin: 20px auto;
   max-width: 850px;
   padding: 20px 40px;
-  position: relative;
 }
 
 header {
   border-bottom: 1px solid #eee;
   color: #404040;
   cursor: default;
-  padding: 0 0 20px;
+  padding: 20px 0;
 }
 
 h1 {
@@ -91,21 +90,19 @@ h1 {
   display: inline-block;
   font-size: 65px;
   letter-spacing: -2px;
-  line-height: 65px;
   padding: 0;
   margin: 0;
   display: inline-block;
 }
 h1:after {
-  font-size: 40px;
+  font-size: 45px;
   letter-spacing: 1px;
-  line-height: 35px;
   content: '//';
   padding-left: 15px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 35px;
   letter-spacing: 1px;
   line-height: 35px;
   margin: 0;
@@ -127,8 +124,53 @@ section.home li {
 section.home li img {
   animation: grayToColor 2s;
   padding-bottom: 5px;
+  margin: auto;
   display: block;
 }
 
+/* mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #container {
+    border: none;
+    margin: 0;
+    padding: 20px;
+  }
 
+  header {
+    padding-top: 0;
+  }
 
+  h1 {
+    font-size: 45px;
+    padding-bottom: 15px;
+    display: block;
+  }
+  h1:after {
+    display: none;
+  }
+
+  h2 {
+    font-size: 30px;
+    letter-spacing: 0;
+  }
+
+  section.home li {
+    padding: 20px 0;
+    margin: 20px 0;
+    display: block;
+  }
+  section.home li:first-child {
+    margin-top: 0;
+  }
+  section.home li img {
+    max-width: 100%;
+  }
+}
+
+/* tablet (vertical) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 911px) {
+  section.home li {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
