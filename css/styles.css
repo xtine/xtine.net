@@ -193,6 +193,16 @@ section.work .description li {
   section.home li img {
     max-width: 100%;
   }
+
+  section.work .project {
+    width: 100%;
+    display: block;
+  }
+  section.work .description {
+    width: 90%;
+    margin: 20px;
+    display: block;
+  }
 }
 
 /* tablet (vertical) */
