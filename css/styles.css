@@ -110,48 +110,59 @@ h2 {
   display: inline-block;
 }
 
-section {
+.content {
   animation: fadein 2s;
   padding: 20px 0;
 }
 
-section.home ul {
-  text-align: center;
-}
-section.home li {
-  display: inline-block;
-}
-section.home li img {
-  animation: grayToColor 2s;
-  padding-bottom: 5px;
-  margin: auto;
-  display: block;
+.content.home {
+  padding-top: 0;
 }
 
-section h3 {
+.home section {
+  padding: 30px 0;
+  border-bottom: 1px dotted #eee;
+  display: flex;
+}
+.home section img {
+  animation: grayToColor 2s;
+  margin-right: 20px;
+  display: inline-block;
+}
+.home section ul {
+  padding: 10px 0;
+  vertical-align: top;
+  display: inline-block;
+}
+.home section ul li {
+  padding: 10px 0;
+}
+
+
+.work h3 {
   font-size: 35px;
   color: #000;
   margin: 0;
   padding: 20px 0;
 }
 
-section.work .project {
+.work .project {
   width: 28%;
   vertical-align: top;
   display: inline-block;
 }
-section.work .project img {
+.work .project img {
   width: 100%;
   margin-top: 20px;
   border-radius: 3px;
   box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
 }
-section.work .description {
+.work .description {
   width: 60%;
   margin: 0 0 40px 40px;
   display: inline-block;
 }
-section.work .description li {
+.work .description li {
   list-style: disc;
   padding-bottom: 10px;
 }
