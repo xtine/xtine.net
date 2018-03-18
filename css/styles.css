@@ -127,6 +127,7 @@ h2 {
 .home section img {
   animation: grayToColor 2s;
   margin-right: 20px;
+  align-self: center;
   display: inline-block;
 }
 .home section ul {
@@ -193,23 +194,19 @@ h2 {
     letter-spacing: 0;
   }
 
-  section.home li {
-    padding: 20px 0;
-    margin: 20px 0;
+  .home section {
+    text-align: center;
     display: block;
   }
-  section.home li:first-child {
-    margin-top: 0;
-  }
-  section.home li img {
-    max-width: 100%;
+  .home section ul {
+    text-align: left;
   }
 
-  section.work .project {
+  .work .project {
     width: 100%;
     display: block;
   }
-  section.work .description {
+  .work .description {
     width: 90%;
     margin: 20px;
     display: block;
