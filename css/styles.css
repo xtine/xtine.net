@@ -110,6 +110,12 @@ h2 {
   display: inline-block;
 }
 
+h3 {
+  font-size: 24px;
+  margin: 0px;
+  padding: 0;
+}
+
 .content {
   animation: fadein 2s;
   padding: 20px 0;
@@ -132,13 +138,14 @@ h2 {
 }
 .home section ul {
   padding: 10px 0;
+  margin: 0 0 0 20px;
   vertical-align: top;
   display: inline-block;
 }
 .home section ul li {
-  padding: 10px 0;
+  padding: 5px 0;
+  list-style: disc;
 }
-
 
 .work h3 {
   font-size: 35px;
